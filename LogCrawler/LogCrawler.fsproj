@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Selector.fs" />
+        <Compile Include="Interpreter.fs" />
+        <Compile Include="Program.fs" />
+        <EmbeddedResource Include="LogsExample" CopyToOutputDirectory="PreserveNewest" />
+        <Content Include=".gitignore" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FParsec" Version="1.1.1" />
+    </ItemGroup>
+
+</Project>
